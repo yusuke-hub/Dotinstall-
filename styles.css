@@ -1,8 +1,10 @@
-p {
-  line-height: 5;
-  background-color: pink;
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  list-style-image: url(img/icon.png);
 }
 
-img {
-  vertical-align: bottom;
+ol {
+  /* list-style-type: lower-alpha; */
+  list-style-type: none;
 }
