@@ -1,4 +1,6 @@
+@charset "utf-8";
 h1 {
+  font-family: Verdana, "Arial Black", メイリオ, sans-serif;
   color: red;
   font-size: 48px;
   text-align: center;
