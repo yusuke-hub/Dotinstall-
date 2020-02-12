@@ -8,8 +8,16 @@
   background-color: skyblue;
   width: 50%;
   height: 50%;
-  /* overflow: hidden; */
-  overflow: scroll;
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: blue; */
+  /* border: 2px solid blue; */
+  /* border: 2px dashed blue; */
+  /* border-top: 2px dashed blue;
+  border-bottom: 2px dashed blue; */
+  border: 2px solid blue;
+  /* border-bottom: none; */
+  border-radius: 10px;
 }
 
 .box3 {
