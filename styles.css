@@ -1,18 +1,7 @@
-@charset "utf-8";
-h1 {
-  font-family: Verdana, "Arial Black", メイリオ, sans-serif;
-  color: red;
-  font-size: 48px;
-  text-align: center;
-  font-weight: normal;
-  text-decoration: line-through;
-}
-
 p {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-a {
-  text-decoration: none;
+  font-size: 16px;
+  line-height: 48px;
+  line-height: 3em;
+  line-height: 3;
+  background-color: pink;
 }
