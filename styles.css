@@ -1,8 +1,8 @@
-main {
-  font-size: 32px;
-  line-height: 2;
+p {
+  line-height: 5;
+  background-color: pink;
 }
 
-section {
-  font-size: 16px;
+img {
+  vertical-align: bottom;
 }
