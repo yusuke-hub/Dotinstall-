@@ -1,0 +1,16 @@
+h1 {
+  color: red;
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
