@@ -5,13 +5,13 @@ body {
 .container {
   display: grid;
 
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 100px 100px [target-start] 100px [target-end];
   grid-template-rows: 100px 100px;
-
-  gap: 20px 40px;
 }
 .box1 {
   background: hsl(0, 60%, 60%);
+  grid-row: 2;
+  grid-column: target;
 }
 
 .box2 {
