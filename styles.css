@@ -1,22 +1,25 @@
-.box1 {
-  background-color: orange;
-  /* width: 100px; */
-  width: calc((100% - 200px) / 3);
-  height: 100px;
+body {
+  margin: 0;
 }
 
-.box2 {
-  background-color: skyblue;
-  /* width: 100px; */
-  width: calc((100% - 200px) / 3);
-  height: 100px;
-  margin: 0 auto;
+header {
+  background: pink;
 }
 
-.box3 {
-  background-color: tomato;
-  /* width: 100px; */
-  width: calc((100% - 200px) / 3);
-  height: 100px;
-  margin-left: auto;
+.container {
+  display: flex;
+}
+
+main {
+  background: skyblue;
+  flex: 1;
+}
+
+aside {
+  background: orange;
+  width: 100px;
+}
+
+footer {
+  background: silver;
 }
