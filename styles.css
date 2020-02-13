@@ -5,8 +5,10 @@ body {
 .container {
   display: grid;
 
-  grid-template-columns: 100px 2fr 1fr;
+  grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px;
+
+  gap: 20px 40px;
 }
 .box1 {
   background: hsl(0, 60%, 60%);
