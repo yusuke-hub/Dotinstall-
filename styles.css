@@ -9,32 +9,19 @@ body {
 }
 
 header {
-  background: pink;
-  margin-bottom: 100px;
-}
-
-.container {
-  display: flex;
-  flex: 1;
-  margin-top: 50px;
-}
-
-main {
-  background: skyblue;
-  flex: 1;
-}
-
-nav {
-  background-color: tomato;
-  width: 100px;
-  order: -1;
-}
-
-aside {
-  background: orange;
-  width: 100px;
-}
-
-footer {
+  height: 200px;
   background: silver;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 100px;
+  height: 40px;
+  background: skyblue;
+  position: absolute;
+  /* top: calc(50% - 20px);
+  left: calc(50% - 50px); */
 }
