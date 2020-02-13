@@ -1,42 +1,29 @@
-/* common */
-/* small screen */
 body {
   margin: 0;
 }
-aside {
-  display: none;
+
+.container {
+  display: grid;
+
+  grid-template-columns: 100px 2fr 1fr;
+  grid-template-rows: 100px 100px;
 }
-.image {
-  background: pink;
-  height: 100px;
-}
-.text {
-  background: silver;
-  height: 100px;
+.box1 {
+  background: hsl(0, 60%, 60%);
 }
 
-/* medium screen */
-@media (min-width: 600px) {
-  section {
-    display: flex;
-  }
-  .image {
-    width: 200px;
-  }
-  .text {
-    flex: 1;
-  }
+.box2 {
+  background: hsl(60, 60%, 60%);
 }
 
-/* large screen */
-@media (min-width: 800px) {
-  section {
-    width: 800px;
-    margin: 0 auto;
-  }
-  aside {
-    display: block;
-    background: plum;
-    width: 160px;
-  }
+.box3 {
+  background: hsl(120, 60%, 60%);
+}
+
+.box4 {
+  background: hsl(180, 60%, 60%);
+}
+
+.box5 {
+  background: hsl(240, 60%, 60%);
 }
