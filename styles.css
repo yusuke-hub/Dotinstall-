@@ -5,21 +5,28 @@ body {
 .container {
   display: grid;
 
-  grid-template-columns: 100px 100px [target-start] 100px [target-end];
-  grid-template-rows: 100px 100px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(4, 100px);
+
+  /* grid-auto-flow: row; */
+  grid-auto-flow: column dense;
+  grid-auto-columns: 100px;
 }
+
 .box1 {
   background: hsl(0, 60%, 60%);
-  grid-row: 2;
-  grid-column: target;
 }
 
 .box2 {
   background: hsl(60, 60%, 60%);
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .box3 {
   background: hsl(120, 60%, 60%);
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .box4 {
