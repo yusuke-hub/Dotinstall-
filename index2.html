@@ -34,3 +34,16 @@ ls -l 詳細なリストを表示
 
 /etc/passwd システムに設定されているユーザーの一覧を記載しているファイル
 groups 自分が所属しているグループを確認
+
+パーミッション
+rwx           rw-         r--
+u(ser)        g(roup)     o(ther)
+
+r(ead) w(rite) (e)x(ecute)
+
+groupに実行権限を与えたい場合
+chmod g+x sample
+groupとotherに…
+chmod go+x sample
+全てから実行権限を無くしたい場合
+chmod a-x sample
