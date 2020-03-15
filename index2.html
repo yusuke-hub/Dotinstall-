@@ -57,3 +57,12 @@ chmod a-x sample
 ex, ls /etc/*.conf
 ?何でもいいから1文字だけ
 ex, ls /etc/c??.*
+
+文字列を含むファイルを検索
+実行が拒否された場合はsudoを使用
+1つ前に実行したコマンドをsudoで実行する場合はsudo !!
+find ファイル名 -name "文字列"
+
+上記の処理に加えて、文字数カウントの実行も追加
+find ファイル名 -name "文字列" -type f -exec wc -l {} +
+find ファイル名 -name "文字列" -type f | xargs wc -l
