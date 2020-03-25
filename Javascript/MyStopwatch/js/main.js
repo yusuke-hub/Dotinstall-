@@ -22,7 +22,7 @@
     }, 10);
   }
 
-  function seBtuttonStateInitial() {
+  function setButtonStateInitial() {
     start.disabled = false;
     stop.disabled = true;
     reset.disabled = true;
@@ -39,14 +39,17 @@
   }
 
   start.addEventListener("click", () => {
+    setButtonStateRunning();
     startTime = Date.now();
     countUp();
   });
   stop.addEventListener("click", () => {
+    setButtonStateStopped();
     clearTimeout(timeoutId);
     elapsedTime += Date.now() - startTime;
   });
   reset.addEventListener("click", () => {
+    setButtonStateInitial();
     timer.textContent = "00:00:000";
     elapsedTime = 0;
   });
