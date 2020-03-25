@@ -27,10 +27,16 @@ body {
   background: #ddd;
   font-weight: bold;
   cursor: pointer;
+  /* 文字が選択されてしまうことを防ぐ */
   user-select: none;
 }
 
 .controls {
   display: flex;
+  /* 親要素の指定することで親要素の幅の中で子要素を等間隔に配置できる */
   justify-content: space-between;
+}
+
+.inactive {
+  opacity: 0.6;
 }
