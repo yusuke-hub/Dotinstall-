@@ -1,10 +1,13 @@
 body {
-  margin: ;
-  padding: ;
-  margin: 10px;
-  margin: 10%;
-  margin: 10rem;
-  margin: 10% 20%;
-  margin: 10px 10px 30px;
-  margin: 20rem;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  background: #eee;
+}
+
+.container {
+  margin: 20px auto;
+  width: 270px;
+  background: #fff;
+  padding: 15px;
+  text-align: center;
 }
