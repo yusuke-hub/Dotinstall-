@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <title>Angularの練習</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="myscript.js"></script>
   </head>
 
   <body>
     <h1>AngularJSの練習</h1>
     <div ng-controller="MainController">
-      <p>{{25 * 500|number}}</p>
-      <p>{{25 * 500|currency:"¥"}}</p>
-      <p>{{today|date:'yyyy-MM-dd'}}</p>
-      <p>{{users.length}} users.</p>
+      <p><input type="text" ng-model="query.name" /></p>
       <ul>
-        <li ng-repeat="user in users">
-          {{user.name|uppercase}} {{user.score|number:4}}
+        <!-- <li ng-repeat="user in users|limitTo:5"></li>
+        昇順        
+        <li ng-repeat="user in users|orderBy:'score'"></li>
+        降順
+        <li ng-repeat="user in users|orderBy:'-score'"></li> -->
+        <li ng-repeat="user in users|filter:query|limitTo:3|orderBy:'-score'">
+          {{user.name}} {{user.score}}
         </li>
       </ul>
     </div>
